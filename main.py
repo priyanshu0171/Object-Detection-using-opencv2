@@ -27,7 +27,7 @@ net = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)
 cap = cv2.VideoCapture(1)
 
 while True:
-
+    # readind data from the cap object and passing the image to the `image` varible
     _, image  = cap.read()
 
     height, width = image.shape[0], image.shape[1]
